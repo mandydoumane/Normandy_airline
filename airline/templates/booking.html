@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+    {% if vol %}
+    <div class="selection_vol">
+    {% for resa in vol %}
+        <div class="select_resa">
+            <ul>
+                <li>Numéro de vol: {{resa.flight_number}}</li>
+                <li>date: {{resa.date}}</li>
+                <li>Heure de départ: {{resa.hour_d}} </li>
+                <li>Heure d'arrivée: {{resa.hour_a}}</li>
+                <li>durée: {{resa.duration}} </li>
+                <li>Départ: {{depart}} </li>
+                <li>Arrivée: {{arrive}}</li>
+                <li>Avion: {{resa.name}} </li>
+                {%for item in company%}
+                {% if item.id is resa.company_id %}
+                    <li>compagnie: {{item.name}}{% endif %} </li>
+                {% endfor %}
+                <li>price: {{resa.price}}</li>
+                {% comment %} {%for com in commodites%}
+                    <li>Model: {{com.model}} </li>
+                    <li>Seat capacity: {{com.seat_capacity}} </li>
+                    <li>Wireless: {{com.wireless}} </li>
+                    <li>Entertainment: {{com.entertainment}} </li>
+                    <li>Restoration: {{com.restoration}} </li>
+                {% endfor %} {% endcomment %}
+                <a href='{{resa.id}}'>Select this flight</a>
+            </ul>
+        </div>
+    {% endfor %}
+    </div>
+    {% endif %}
+{% endblock %} 

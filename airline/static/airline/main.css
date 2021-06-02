@@ -1,0 +1,154 @@
+.ville_cache{
+    display: none;
+}
+
+/* Formulaire vol */
+#id_departure{
+    margin-left: 10px;
+    margin-right: 30px;
+    border-radius: 2rem;
+    padding: 5px;
+    border: 2px solid black;
+    text-align: center;
+    outline: none;     
+}
+
+#id_arrival{
+    margin-left: 10px;
+    margin-right: 30px;
+    border-radius: 2rem;
+    padding: 5px;
+    border: 2px solid black;
+    text-align: center;
+    outline: none;
+}
+
+#submit{
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 25px;
+    cursor: pointer;
+    font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+    color: #fff;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 14px;
+    font-weight: 700;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #57b846;
+    margin-left: 40px;
+    outline: none;
+}
+
+#submit:hover {
+    background: #719b69;
+    outline: none;
+  }
+
+.datepicker{
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 2rem;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(226, 220, 220);
+    border: 2px solid black;
+    outline: none;
+}
+
+/* Formulaire Passager */
+#id_gender{
+    margin-bottom: 15px;
+    margin-left: 5px;
+    border-radius: 2rem;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#id_first_name{
+    margin-bottom: 15px;
+    margin-left: 5px;
+    border-radius: 2rem;
+    padding: 5px;
+    background-color: rgb(226, 220, 220);
+    border: 2px solid black;
+}
+
+#id_last_name{
+    margin-bottom: 15px;
+    margin-left: 5px;
+    border-radius: 2rem;
+    padding: 5px;
+    background-color: rgb(226, 220, 220);
+    border: 2px solid black;
+}
+
+#id_date_birth{
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+
+#id_email{
+    margin-bottom: 15px;
+    margin-left: 5px;
+    border-radius: 2rem;
+    padding: 5px;
+    background-color: rgb(226, 220, 220);
+    border: 2px solid black;
+}
+
+/* Body */
+body{
+    padding-left: 15px;
+    background-image: url(images/background.jpg);
+}
+
+h1{
+    text-align: center;
+    color: #46bb31;
+    font-family: 'Lobster';
+    font-size: 50px;
+    margin-top: 90px;
+}
+
+h2{
+    text-align: center;
+    color: #46bb31;
+    font-family: 'Lobster';
+    font-size: 40px;
+    margin-top: 90px;
+}
+
+ul{
+    list-style: none;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+#group{
+    display: block;
+    margin-top: 200px;
+    margin-left: 250px;
+    padding-bottom: 50px;
+}
+
+
+.selection_vol{
+    display: flex;
+    justify-content: center;
+}
+
+.select_resa{
+    border: 2px solid #46bb31;
+    margin: 25px;
+    padding: 25px;
+}
+
+a:hover{
+    color: #46bb31;
+    text-decoration: none;
+}
